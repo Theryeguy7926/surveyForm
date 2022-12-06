@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description"><i>Thank you for taking the time to help us improve the platform!</i></p>
+    <form id="survey-form">
+        <fieldset class="border">
+            <label for="name" id="name-label">Name: </label><input type="text" id="name" name="name"
+                placeholder="Enter your name" required>
+            <label for="email" id="email-label">Email: </label><input type="email" id="email" name="email"
+                placeholder="Enter your email" required>
+            <label for="number" id="number-label">Age (optional): </label><input type="number" id="number" name="number"
+                min="13" max="120" placeholder="Age (years)">
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select id="dropdown" name="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Student</option>
+                <option value="2">Employed Full-Time</option>
+                <option value="3">Employed Part-Time</option>
+                <option value="4">Unemployed</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label for="def"><input class="inline" type="radio" name="referral" id="def" value="def"> Definitely
+            </label>
+            <label for="maybe"><input class="inline" type="radio" name="referral" id="maybe" value="maybe"> Maybe
+            </label>
+            <label for="no"><input type="radio" class="inline" name="referral" id="no" value="no"> Lol no </label>
+            <p>What would you like to see improved? <i>(Check all that apply)</i></p>
+            <label for="front-end"><input class="inline" type="checkbox" value="front-end"> Front end projects</label>
+            <label for="back-end"><input class="inline" type="checkbox" value="back-end"> Back end projects</label>
+            <label for="dataViz"><input class="inline" type="checkbox" value="dataViz"> Data Vizualization</label>
+            <label for="challenges"><input class="inline" type="checkbox" value="challenges"> Challenges</label>
+            <label for="comments" class="pad">Additional comments? <textarea id="comments"></textarea></label>
+        </fieldset>
+        <fieldset>
+            <input id="submit" type="submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>
